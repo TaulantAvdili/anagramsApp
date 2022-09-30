@@ -14,8 +14,8 @@ built-in javascript functions where we modify the words from the dictionary.txt 
 each word to have lower case characters then we split the word into separate characters then 
 we sort them in a alphabetical way (a-z) and finally we join them together sorted, we do the same with 
 the word that the user inputs in this way we can compare the modified words to the given word that
-the user did enter. Using this approach we have to compare the given word with the number of words
-of the same length from the dictionary.txt only once (which means mush less comparations). 
-This solution also has O(n) complexity which is much better than the previous solution.
+the user did enter to find the anagrams. Using this approach we have to compare the given word with the
+number of words of the same length from the dictionary.txt only once (which means much less comparations). 
+This solution has O(n) complexity which is much better than the previous solution.
 
 
