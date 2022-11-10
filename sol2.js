@@ -1,11 +1,9 @@
 const readline = require("readline");
-const { performance } = require('perf_hooks');
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
 rl.question("Enter a word: ", (answer) => {
-    let start = performance.now();
     var fs = require('fs');
     var dictionaryArray = fs.readFileSync('dictionary.txt').toString().split("\n");
     let newdict = [];
@@ -27,8 +25,6 @@ rl.question("Enter a word: ", (answer) => {
         }
     }
     rl.close();
-    let end = performance.now();
-    console.log(`It took ${end - start} time to execute te program`);
 });
 
 let anagrams = (input, newDictArr) => {
